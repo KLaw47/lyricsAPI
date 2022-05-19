@@ -3,13 +3,13 @@
 
 import 'bootstrap'; // import bootstrap elements and js
 import '../styles/main.scss';
-import { lyricsBtn, eventListen } from './button';
+import { domForm, eventListen } from './components/form';
 //  import renderLyrics from './renderLyrics';
-import htmlStructure from './htmlStructure';
+import htmlStructure from './components/htmlStructure';
 
 const startApp = () => {
   htmlStructure();
-  lyricsBtn();
+  domForm();
   eventListen();
 };
 startApp();

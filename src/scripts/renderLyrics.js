@@ -1,5 +1,5 @@
-import getLyrics from './getLyrics';
-import renderToDom from './renderToDom';
+import getLyrics from '../api/getLyrics';
+import renderToDom from './helpers/renderToDom';
 
 const renderLyrics = (artist, song) => {
   getLyrics(artist, song).then((response) => {
